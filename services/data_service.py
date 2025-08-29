@@ -15,7 +15,8 @@ import numpy as np
 def get_client():
     try:
         # Παίρνει το path από το ENV VAR
-        credentials_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+        current_dir = os.getcwd()
+        credentials_path = os.path.join(current_dir, "credentials.json")
         if not credentials_path or not os.path.exists(credentials_path):
             print("[DEBUG][ERROR] GOOGLE_APPLICATION_CREDENTIALS not set or file not found!")
             return None
