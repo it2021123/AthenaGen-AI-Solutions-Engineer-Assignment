@@ -43,6 +43,7 @@
 # Unzip το αρχείο athengen_ai/
 # Άνοιξε τον φάκελο athengen_ai/
 # Δεξί κλικ στο αρχείο run_flask_app.bat
+```
 
 ### Linux
 ```bash
@@ -51,16 +52,19 @@
 # Άνοιξε τον φάκελο athengen_ai/
 # chmod +x run_flask_app.sh
 # ./run_flask_app.sh
+```
 
+```bash
 ###Εναλλακτικά (Cross-platform)
 # Κατέβασε το GitHub repo
 # Unzip το αρχείο athengen_ai/
 # Άνοιξε τον φάκελο athengen_ai/
 # pip install request
 # python run.py
-
+```
 
 📁 Δομή Αρχείων
+```bash
 athengen_ai/
 ├── config.py
 ├── app.py
@@ -85,23 +89,24 @@ athengen_ai/
 ├── Technical Documentation.pdf
 ├── User Manual.pdf
 └── README.md
+```
 
 
+## 🔌 API Endpoints
 
-🔌 Endpoints (API)
-|  |  |  | 
-| / |  |  | 
-| /data |  |  | 
-| /add |  |  | 
-| /delete_by_source/ |  |  | 
-| /delete_by_source/<source> |  |  | 
-| /extract/<filename> |  |  | 
-| /list_emails |  |  | 
-| /list_forms |  |  | 
-| /delete_file/<filename> |  |  | 
-| /get_file_data/<filename> |  |  | 
-| /save_file_data |  |  | 
-
+| Endpoint                      | Description                     |
+|------------------------------|---------------------------------|
+| `/`                          | Home                            |
+| `/data`                      | View extracted data             |
+| `/add`                       | Add new entry                   |
+| `/delete_by_source/`         | Delete entries by source        |
+| `/delete_by_source/<source>` | Delete entries from source      |
+| `/extract/<filename>`        | Extract data from file          |
+| `/list_emails`               | List available email files      |
+| `/list_forms`                | List available form files       |
+| `/delete_file/<filename>`    | Delete file                     |
+| `/get_file_data/<filename>`  | Retrieve file data              |
+| `/save_file_data`            | Save edited data                |
 
 
 📌 Σημειώσεις
