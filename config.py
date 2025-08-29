@@ -19,8 +19,8 @@ EMAIL_FOLDER = os.path.join(DATA_FOLDER,"emails")
 MODEL_FILE = os.path.join(BASE_DIR, "priority_model.pkl")
 
 #Path Credentials json
-
-credentials_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+current_dir = os.getcwd()
+credentials_path = os.path.join(current_dir, "credentials.json")
 # Ανάλογα με τη βιβλιοθήκη, π.χ. για storage:
 client = storage.Client.from_service_account_json(credentials_path)
 
