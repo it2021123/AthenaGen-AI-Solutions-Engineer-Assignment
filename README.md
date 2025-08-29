@@ -80,7 +80,7 @@ athengen_ai/
 │   ├── extractor.py
 │   └── form_extractor.py
 ├── auto_testing.py
-├── credential.json
+├── credential.json // Σας το εχώ προωθησεί μέσω email
 ├── priority_classifier.py
 ├── priority_model.pk
 ├── run_flask.sh
